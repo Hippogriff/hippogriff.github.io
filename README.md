@@ -5,6 +5,27 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/alshedivat/al-folio/blob/master/LICENSE)
 [![gitter](https://badges.gitter.im/alshedivat/al-folio.svg)](https://gitter.im/alshedivat/al-folio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+## How to edit?
+If you are running for the first time
+```
+$ git clone git@github.com:<your-username>/<your-repo-name>.git
+$ cd <your-repo-name>
+$ bundle install
+$ bundle exec jekyll serve
+$ ./bin/deploy --user
+```
+
+Now to edit stuff:
+```
+git checkout source
+```
+Edit stuff and then commit:
+```
+git add --all
+git commit -m "meaningful comment"
+./bin/deploy
+```
+
 A simple and clean [Jekyll](https://jekyllrb.com/) theme for academics.
 
 [![Screenshot](assets/img/full-screenshot.png)](https://alshedivat.github.io/al-folio/)
