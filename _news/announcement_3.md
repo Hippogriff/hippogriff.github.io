@@ -1,7 +1,6 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2019-08-22 15:59:00-0400
 inline: true
 ---
-
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Spent three wonderful months at Adobe San Jose, working with Radomir Mech and Siddharth Choudhary.
