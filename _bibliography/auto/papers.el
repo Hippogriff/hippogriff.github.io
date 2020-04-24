@@ -2,6 +2,8 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "gadelha2020labelefficient"
+    "sharma2020parsenet"
     "Rooshenas"
     "sharma2019neural"
     "Sharma2019"
