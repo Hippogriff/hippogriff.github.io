@@ -92,7 +92,7 @@ git push -f -q origin $DEPLOY_BRANCH
 
 # Move back to SRC_BRANCH
 git checkout $SRC_BRANCH
-
+git push origin $SRC_BRANCH
 echo "Deployed successfully!"
 
 exit 0
