@@ -12,7 +12,7 @@ profile:
     <p></p>
     <p></p>--->
 
-news: True
+news: False
 social: True
 ---
 
@@ -21,7 +21,279 @@ advised by Prof. [Evangelos Kalogerakis](http://people.cs.umass.edu/~kalo/), and
 Prof. [Subhransu Maji](https://people.cs.umass.edu/~smaji/). I am interested in
 Deep Learning, Computer Vision and Deep Reinforcement Learning. Previously, I
 have worked at [VCC](https://vcc.kaust.edu.sa/Pages/Home.aspx) with Prof.
-[Bernard Ghanem](http://www.bernardghanem.com/). Currently, I am working on
-learning interpretable and editable representation for 3D shapes reconstruction,
-and learning 3D shape representations for few-shot classification and
-segmentation. You can find my [CV here](/assets/CV/cv.pdf).
+[Bernard Ghanem](http://www.bernardghanem.com/).
+
+I am interested in learning interpretable and editable representation
+of shapes using neural networks. I am also interested in
+self-supervised representation learning for 3D shapes. You can find my
+[CV here](/assets/CV/cv.pdf).
+
+
+
+<p><br />
+<br /></p>
+
+<h2 id="news">News</h2>
+
+<ul>
+  <li>Our work on shape parsing is accepted at ECCV 2020. <a href="https://hippogriff.github.io/ParSeNet/">ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds</a></li>
+  <li>Our work on Few Shot Segementation is accepted at ECCV 2020. <a href="https://arxiv.org/abs/2003.13834">Label-Efficient Learning on Point Clouds using Approximate Convex Decompositions</a></li>
+  <li>Our paper [<a href="https://papers.nips.cc/paper/9507-search-guided-lightly-supervised-training-of-structured-prediction-energy-networks.pdf">Search-Guided, Lightly-Supervised Training of Structured Prediction Energy Networks</a>] has been accepted to NeurIPS-2019.</li>
+  <li>Journal version of CSGNet paper is now online. [<a href="https://arxiv.org/pdf/1912.11393.pdf">paper</a>]</li>
+  <li>Spent three wonderful months at Adobe San Jose, working with <a href="https://research.adobe.com/person/radomir-mech/">Radomír Měch</a> and <a href="https://www.cse.iitb.ac.in/~sidch/">Siddhartha Chaudhuri</a>.</li>
+  <li>Our new paper “Learning Point Embeddings from Shape Repositories for Few-Shot Segmentation” is accepted at 3DV-2019”. [<a href="https://arxiv.org/abs/1910.01269">paper</a>]</li>
+  <li>Our new paper “CSGNet: Neural Shape Parser for Constructive Solid Geometry” is accepted at CVPR-2018. [<a href="https://arxiv.org/abs/1712.08290">paper</a>][<a href="https://github.com/Hippogriff/CSGNet">project</a>]</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+<h3 id="2020">2020</h3>
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <tr>
+     <td width="30%" valign="middle">
+            <img src="/assets/paper_images/parsenet.png" alt="eval" style="vertical-align:middle; width: 80%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds</b>
+              <br />
+              <b> Gopal Sharma </b>,
+              Difan Liu,
+              Evangelos Kalogerakis,
+              Subhransu Maji, 
+              Siddhartha Chaudhuri and
+              Radomír Měch
+              <br />
+              ECCV 2020, <a href="https://arxiv.org/pdf/2003.12181.pdf">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">
+                    We propose a novel, end-to-end trainable, deep network called ParSeNet that decomposes a 3D point cloud into parametric surface patches, including B-spline patches as well as basic geometric primitives. ParSeNet is trained on a large-scale dataset of man-made 3D shapes and captures high-level semantic priors for shape decomposition. It handles a much richer class of primitives than prior work, and allows us to represent surfaces with higher fidelity. It also produces repeatable and robust parametrizations of a surface compared to purely geometric approaches. We present extensive experiments to validate our approach against analytical and learning-based alternatives.
+                  </p>
+              </details>
+              <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @misc{sharma2020parsenet,
+                    title={ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds},
+                    author={Gopal Sharma and Difan Liu and Evangelos Kalogerakis and Subhransu Maji and Siddhartha Chaudhuri and Radomír Měch},
+                    year={2020},
+                    eprint={2003.12181},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.CV}
+                    }
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+
+   <tr>
+     <td width="30%" valign="middle">
+            <img src="/assets/paper_images/acd.png" alt="eval" style="vertical-align:middle; width: 80%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Label-Efficient Learning on Point Clouds using Approximate Convex Decompositions</b>
+              <br />
+              Matheus Gadelha<sup>*</sup>, Aruni RoyChowdhury<sup>*</sup>, <b>Gopal Sharma </b>, Evangelos Kalogerakis, Liangliang Cao, Erik Learned-Miller, Rui Wang, Subhransu Maji
+              <br />
+              ECCV 2020, <a href="https://arxiv.org/abs/2003.13834">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">
+                    The problems of shape classification and part segmentation from 3D point clouds have garnered increasing attention in the last few years. But both of these problems suffer from relatively small training sets, creating the need for statistically efficient methods to learn 3D shape representations. In this work, we investigate the use of Approximate Convex Decompositions (ACD) as a self-supervisory signal for label-efficient learning of point cloud representations. Decomposing a 3D shape into simpler constituent parts or primitives is a fundamental problem in geometrical shape processing. There has been extensive work on such decompositions, where the criterion for simplicity of a constituent shape is often defined in terms of convexity for solid primitives. In this paper, we show that using the results of ACD to approximate a ground truth segmentation provides excellent self-supervision for learning 3D point cloud representations that are highly effective on downstream tasks. We report improvements over the state-of-theart in unsupervised representation learning on the ModelNet40 shape classification dataset and significant gains in few-shot part segmentation on the ShapeNetPart dataset.
+                  </p>
+              </details>
+              <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @misc{gadelha2020labelefficient,
+                    title={Label-Efficient Learning on Point Clouds using Approximate Convex Decompositions},
+                    author={Matheus Gadelha and Aruni RoyChowdhury and Gopal Sharma and Evangelos Kalogerakis and Liangliang Cao and Erik Learned-Miller and Rui Wang and Subhransu Maji},
+                    year={2020},
+                    eprint={2003.13834},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.CV}
+                    }
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+</table>
+
+<h3 id="2019">2019</h3>
+
+<table width="40%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <tr>
+     <td height="100%" valign="middle">
+            <img src="/assets/paper_images/spen.png" alt="eval" style="vertical-align:middle; width: 80%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Search-Guided, Lightly-supervised Training of Structured Prediction Energy Networks</b>
+              <br />
+              Amirmohammad Rooshenas, Dongxu Zhang, <b>Gopal Sharma</b>, and Andrew McCallum
+              <br />
+              NeurIPS 2019, <a href="https://papers.nips.cc/paper/9507-search-guided-lightly-supervised-training-of-structured-prediction-energy-networks.pdf">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">
+                    In structured output prediction tasks, labeling ground-truth training output is often expensive. However, for many tasks, even when the true output is unknown, we can evaluate predictions using a scalar reward function, which may be easily assembled from human knowledge or non-differentiable pipelines. But searching through the entire output space to find the best output with respect to this reward function is typically intractable. In this paper, we instead use efficient truncated randomized search in this reward function to train structured prediction energy networks (SPENs), which provide efficient test-time inference using gradient-based search on a smooth, learned representation of the score landscape, and have previously yielded state-of-the-art results in structured prediction. In particular, this truncated randomized search in the reward function yields previously unknown local improvements, providing effective supervision to SPENs, avoiding their traditional need for labeled training data.
+                  </p>
+              </details>
+              <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @incollection{NIPS2019_9507,
+                    title = {Search-Guided, Lightly-Supervised Training of Structured Prediction Energy Networks},
+                    author = {Rooshenas, Amirmohammad and Zhang, Dongxu and Sharma, Gopal and McCallum, Andrew},
+                    booktitle = {Advances in Neural Information Processing Systems 32},
+                    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+                    pages = {13522--13532},
+                    year = {2019},
+                    publisher = {Curran Associates, Inc.},
+                    url = {http://papers.nips.cc/paper/9507-search-guided-lightly-supervised-training-of-structured-prediction-energy-networks.pdf}
+                    }
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+
+   <tr>
+     <td width="40%" valign="middle">
+            <img src="/assets/paper_images/pen.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Learning Point Embeddings from Shape Repositories for Few-Shot Segmentation</b>
+              <br />
+              <b>Gopal Sharma</b>, Evangelos Kalogerakis and Subhransu Maji.
+              <br />
+              3DV 2019, <a href="https://ieeexplore.ieee.org/document/8885650">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">
+                    User generated 3D shapes in online repositories contain rich information about surfaces, primitives, and their geometric relations, often arranged in a hierarchy. We present a framework for learning representations of 3D shapes that reflect the information present in this meta data and show that it leads to improved generalization for semantic segmentation tasks. Our approach is a point embedding network that generates a vectorial representation of the 3D points such that it reflects the grouping hierarchy and tag data. The main challenge is that the data is noisy and highly variable. To this end, we present a tree-aware metric-learning approach and demonstrate that such learned embeddings offer excellent transfer to semantic segmentation tasks, especially when training data is limited. Our approach reduces the relative error by 10.2% with 8 training examples, by 11.72% with 120 training examples on the ShapeNet semantic segmentation benchmark, in comparison to the network trained from scratch. By utilizing tag data the relative error is reduced by 12.8% with 8 training examples, in comparison to the network trained from scratch. These improvements come at no additional labeling cost as the meta data is freely available.
+                  </p>
+              </details>
+              <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @INPROCEEDINGS{8885650,
+                    author={G. {Sharma} and E. {Kalogerakis} and S. {Maji}},
+                    booktitle={2019 International Conference on 3D Vision (3DV)}, 
+                    title={Learning Point Embeddings from Shape Repositories for Few-Shot Segmentation}, 
+                    year={2019},
+                    volume={},
+                    number={},
+                    pages={67-75},}
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+
+
+   <tr>
+     <td height="30%" valign="middle">
+            <img src="/assets/paper_images/stackcsgnet.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Neural Shape Parsers for Constructive Solid Geometry</b>
+              <br />
+              <b>Gopal Sharma</b>, Rishabh Goyal, Difan Goyal, Evangelos  Kalogerakis and Subhransu Maji
+              <br />
+              Preprint, <a href="http://arxiv-export-lb.library.cornell.edu/pdf/1912.11393">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">Constructive Solid Geometry (CSG) is a geometric modeling technique that defines complex shapes by recursively applying boolean operations on primitives such as spheres and cylinders. We present CSGNet, a deep network architecture that takes as input a 2D or 3D shape and outputs a CSG program that models it. Parsing shapes into CSG programs is desirable as it yields a compact and interpretable generative model. However, the task is challenging since the space of primitives and their combinations can be prohibitively large. CSGNet uses a convolutional encoder and recurrent decoder based on deep networks to map shapes to modeling instructions in a feed-forward manner and is significantly faster than bottom-up approaches. We investigate two architectures for this task — a vanilla encoder (CNN) - decoder (RNN) and another architecture that augments the encoder with an explicit memory module based on the program execution stack. The stack augmentation improves the reconstruction quality of the generated shape and learning efficiency. Our approach is also more effective as a shape primitive detector compared to a state-of-the-art object detector. Finally, we demonstrate CSGNet can be trained on novel datasets without program annotations through policy gradient techniques.</p> </details> <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @misc{sharma2019neural,
+ 		       title={Neural Shape Parsers for Constructive Solid Geometry},
+		           author={Gopal Sharma and Rishabh Goyal and Difan Liu and Evangelos Kalogerakis and Subhransu Maji},
+			       year={2019},
+			       eprint={1912.11393},
+			       archivePrefix={arXiv},
+			       primaryClass={cs.CV}
+			       }			       
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+   
+</table>
+
+<h3 id="2018">2018</h3>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+     <td width="40%" valign="middle">
+            <img src="/assets/paper_images/csgnet.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>CSGNet: Neural Shape Parser for Constructive Solid Geometry</b>
+              <br />
+              <b>Gopal Sharma</b>, Rishabh Goyal, Difan Goyal, Evangelos  Kalogerakis and Subhransu Maji
+              <br />
+              CVPR 2018, <a href="http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/0561.pdf">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">We present a neural architecture that takes as input a 2D or 3D shape and outputs a program that generates the shape. The instructions in our program are based on constructive solid geometry principles, i.e., a set of boolean operations on shape primitives defined recursively. Bottom-up techniques for this shape parsing task rely on primitive detection and are inherently slow since the search space over possible primitive combinations is large. In contrast, our model uses a recurrent neural network that parses the input shape in a top-down manner, which is significantly faster and yields a compact and easy-to-interpret sequence of modeling instructions. Our model is also more effective as a shape detector compared to existing state-of-the-art detection techniques. We finally demonstrate that our network can be trained on novel datasets without ground-truth program annotations through policy gradient techniques.</p> </details> <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @INPROCEEDINGS{8578676,
+                    author={G. {Sharma} and R. {Goyal} and D. {Liu} and E. {Kalogerakis} and S. {Maji}},
+                    booktitle={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition}, 
+                    title={CSGNet: Neural Shape Parser for Constructive Solid Geometry}, 
+                    year={2018},
+                    volume={},
+                    number={},
+                    pages={5515-5523},}
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+</table>
+
+<h3 id="2016">2016</h3>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+     <td width="35%" valign="middle">
+            <img src="/assets/paper_images/uav.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Persistent Aerial Tracking system for UAVs</b>
+              <br />
+              Matthias Mueller, Gopal Sharma, Neil Smith and Bernard Ghanem
+              <br />
+              IROS 2016, <a href="https://ieeexplore.ieee.org/document/7759253">Paper</a>
+              <details>
+                <summary>Abstract  </summary>            
+                  <p class="message">The ability to capture stabilized high resolution video from low-cost UAVs has the potential to significantly redefine future objectives in the development of state-of-the-art object tracking methods. In this paper, we propose a persistent, robust and autonomous object tracking system designed for UAV applications, called Persistent Aerial Tracking (PAT) (see Fig. 1). Persistent aerial tracking can serve many purposes, not only related to surveillance but also search and rescue, wild-life monitoring, crowd monitoring/management, and extreme sports. Deploying PAT on UAVs is a very promising application, since the camera can follow the target based on its visual feedback and actively change its orientation and position to optimize for tracking performance (e.g. persistent tracking accuracy in the presence of occlusion or fast motion across large and diverse areas). This is the defining difference with static tracking systems, which passively analyze a dynamic scene to produce analytics for other systems. It enables ad-hoc and low-cost surveillance that can be quickly deployed, especially in locales where surveillance infrastructure is not already established or feasible (e.g. remote locations, rugged terrain, and large water bodies.</p> </details> <details>
+                <summary>Cite  </summary>            
+                  <p class="message">
+                    @INPROCEEDINGS{7759253,
+                    author={M. {Mueller} and G. {Sharma} and N. {Smith} and B. {Ghanem}},
+                    booktitle={2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+                    title={Persistent Aerial Tracking system for UAVs}, 
+                    year={2016},
+                    volume={},
+                    number={},
+                    pages={1562-1569},}
+                  </p>
+              </details>
+          </p>  
+     </td>
+   </tr>
+</table>
