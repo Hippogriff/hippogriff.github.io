@@ -36,7 +36,7 @@ self-supervised representation learning for 3D shapes. You can find my
 <h2 id="news">News</h2>
 
 <ul>
-  <li>Our work on shape parsing is accepted at ECCV 2020. <a href="https://hippogriff.github.io/ParSeNet/">ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds</a></li>
+  <li>Our work on shape parsing is accepted at ECCV 2020. <a href="https://hippogriff.github.io/parsenet/">ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds</a></li>
   <li>Our work on Few Shot Segementation is accepted at ECCV 2020. <a href="https://arxiv.org/abs/2003.13834">Label-Efficient Learning on Point Clouds using Approximate Convex Decompositions</a></li>
   <li>Our paper [<a href="https://papers.nips.cc/paper/9507-search-guided-lightly-supervised-training-of-structured-prediction-energy-networks.pdf">Search-Guided, Lightly-Supervised Training of Structured Prediction Energy Networks</a>] has been accepted to NeurIPS-2019.</li>
   <li>Journal version of CSGNet paper is now online. [<a href="https://arxiv.org/pdf/1912.11393.pdf">paper</a>]</li>
