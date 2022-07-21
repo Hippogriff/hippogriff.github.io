@@ -147,7 +147,7 @@ You can find my <a href="/assets/CV/cv.pdf">CV here</a>.
      </td>
      <td valign="top" width="85%">
           <p>
-              <b>PrimFit: Learning to Fit Primitives Improves Few Shot Learning on Point Clouds</b>
+              <b>PRIFIT: Learning to Fit Primitives Improves Few Shot Point Cloud Segmentation</b>
               <br />
 		<b>Gopal Sharma<sup>*</sup></b>, Bidya Dash<sup>*</sup>, Matheus Gadelha, Aruni RoyChowdhury, Marios Loizou, Evangelos Kalogerakis, Liangliang Cao, Erik Learned-Miller, Rui Wang and Subhransu Maji.
 
@@ -160,6 +160,41 @@ It can be readily applied to existing network architectures for 3D shape segment
 and improves their performance in the few-shot setting, as we demonstrate in the widely used ShapeNet and PartNet benchmarks.
 PrimFit outperforms the prior state-of-the-art in this setting, suggesting that decomposability into primitives is a useful prior for learning representations predictive of semantic parts.
 We present a number of experiments varying the choice of geometric primitives and downstream tasks to demonstrate the effectiveness of the method.</p> </details>
+          </p>  
+     </td>
+   </tr>
+<tr>
+     <td width="35%" valign="middle">
+            <img src="/assets/paper_images/mvdecor.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>MvDeCor: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation</b>
+              <br />
+		<b>Sharma Gopal Sharma</b>, Kangxue Yin, Subhransu Maji, Evangelos Kalogerakis, Or Litany, and Sanja Fidler
+              <br />
+              ECCV 2022, <a href="https://nv-tlabs.github.io/MvDeCor/">Webpage</a>
+		<details>
+                <summary>Abstract  </summary>            
+                <p class="message">
+We propose to utilize self-supervised techniques in the 2D domain for
+fine-grained 3D shape segmentation tasks. This is inspired by the
+observation that view-based surface representations are more effective
+at modeling high-resolution surface details and texture than their 3D
+counterparts based on point clouds or voxel occupancy.  Specifically,
+given a 3D shape, we render it from multiple views, and set up a dense
+correspondence learning task within the contrastive learning
+framework.  As a result, the learned 2D representations are
+view-invariant and geometrically consistent, leading to better
+generalization when trained on a limited number of labeled shapes than
+alternatives based on self-supervision in 2D or 3D alone. Experiments
+on textured (RenderPeople) and untextured (PartNet) 3D datasets show
+that our method outperforms state-of-the-art alternatives in
+fine-grained part segmentation. The improvements over baselines are
+greater when only a sparse set of views is available for training or
+when shapes are textured, indicating that MvDeCor benefits from both 2D
+processing and 3D geometric reasoning.
+		</p> </details>
           </p>  
      </td>
    </tr>
