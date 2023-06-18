@@ -140,6 +140,52 @@ You can find my <a href="/assets/CV/cv.pdf">CV here</a>.
 </ul>
 
 <h2 id="publications">Publications</h2>
+<h3 id="2023">2023</h3>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+     <td width="35%" valign="middle">
+            <img src="/assets/paper_images/correspondence.PNG" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Unsupervised Semantic Correspondence Using Stable Diffusion</b>
+              <br />
+              Eric Hedlin, <b>Gopal Sharma</b>, Shweta Mahajan, Hossam Isack, Abhishek Kar, Andrea Tagliasacchi, Kwang Moo Yi.
+
+              <br />
+              Arxiv 2023, <a href="https://ubc-vision.github.io/LDM_correspondences/">Webpage</a>
+		<details>
+                <summary>Abstract  </summary>            
+                  <p class="message">Text-to-image diffusion models are now capable of generating images that are often indistinguishable from real images. To generate such images, these models must understand the semantics of the objects they are asked to generate. In this work we show that, without any training, one can leverage this semantic knowledge within diffusion models to find semantic correspondences -- locations in multiple images that have the same semantic meaning. Specifically, given an image, we optimize the prompt embeddings of these models for maximum attention on the regions of interest. These optimized embeddings capture semantic information about the location, which can then be transferred to another image. By doing so we obtain results on par with the strongly supervised state of the art on the PF-Willow dataset and significantly outperform (20.9% relative for the SPair-71k dataset) any existing weakly or unsupervised method on PF-Willow, CUB-200 and SPair-71k datasets.</p> </details>
+          </p>  
+     </td>
+   </tr>
+<tr>
+     <td width="35%" valign="middle">
+            <img src="/assets/paper_images/abc.png" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Attention Beats Concatenation for Conditioning Neural Fields</b>
+              <br />
+              Daniel Rebain, Mark J. Matthews, Kwang Moo Yi, <b>Gopal Sharma</b>, Dmitry Lagun, Andrea Tagliasacchi
+              <br />
+              TMLR 2023,
+		<details>
+                <summary>Abstract  </summary>            
+                <p class="message">
+                  Neural fields model signals by mapping coordinate inputs to sampled values. They are becoming an increasingly important backbone architecture across many fields from vision and graphics to biology and astronomy. In this paper, we explore the differences between common conditioning mechanisms within these networks, an essential ingredient in shifting neural fields from memorization of signals to generalization, where the set of signals lying on a manifold is modelled jointly. In particular, we are interested in the scaling behaviour of these mechanisms to increasingly high-dimensional conditioning variables. As we show in our experiments, high-dimensional conditioning is key to modelling complex data distributions, thus it is important to determine what architecture choices best enable this when working on such problems. To this end, we run experiments modelling 2D, 3D, and 4D signals with neural fields, employing concatenation, hyper-network, and attention-based conditioning strategies -- a necessary but laborious effort that has not been performed in the literature. We find that attention-based conditioning outperforms other approaches in a variety of settings.
+		</p> </details>
+          </p>  
+     </td>
+   </tr>
+</table>
+
+
+
+
+
 <h3 id="2022">2022</h3>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
