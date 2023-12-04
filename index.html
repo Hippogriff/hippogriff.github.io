@@ -147,7 +147,28 @@ I am a postdoctoral researcher at <a href="https://vision.cs.ubc.ca/">Universit
                  <p class="message">We propose a novel Neural Radiance Field (NeRF) representation for non-opaque scenes that allows fast inference by utilizing textured polygons. Despite the high-quality novel view rendering that NeRF provides, a critical limitation is that it relies on volume rendering that can be computationally expensive and does not utilize the advancements in modern graphics hardware. Existing methods for this problem fall short when it comes to modelling volumetric effects as they rely purely on surface rendering. We thus propose to model the scene with polygons, which can then be used to obtain the quadrature points required to model volumetric effects, and also their opacity and colour from the texture. To obtain such polygonal mesh, we train a specialized field whose zero-crossings would correspond to the quadrature points when volume rendering, and perform marching cubes on this field. We then rasterize the polygons and utilize the fragment shaders to obtain the final colour image. Our method allows rendering on various devices and easy integration with existing graphics frameworks while keeping the benefits of volume rendering alive.</p> </details>
          </p>  
     </td>
-  </tr>
+</tr>
+<tr>
+  <tr>
+     <td width="3%" valign="middle">
+            <img src="./assets/paper_images/tesla-bots.gif" alt="eval" style="vertical-align:middle; width: 100%; margin:0px 10px; border-radius:0%" /> 
+     </td>
+     <td valign="top" width="85%">
+          <p>
+              <b>Unsupervised Keypoints from Pretrained Diffusion Models</b>
+              <br />
+              Eric Hedlin, <b>Gopal Sharma</b>, Shweta Mahajan, Xingzhe He, Hossam Isack, Abhishek Kar,
+Helge Rhodin, Andrea Tagliasacchi, Kwang Moo Yi.
+
+              <br />
+              Arxiv 2023, <a href="https://ubc-vision.github.io/StableKeypoints/">Webpage</a>
+		<details>
+                <summary>Abstract  </summary>            
+                  <p class="message">Unsupervised learning of keypoints and landmarks has seen significant progress with the help of modern neural network architectures, but performance is yet to match the supervised counterpart, making their practicability questionable. We leverage the emergent knowledge within text-to-image diffusion models, towards more robust unsupervised keypoints. Our core idea is to find text embeddings that would cause the generative model to consistently attend to compact regions in images (i.e. keypoints). To do so, we simply optimize the text embedding such that the cross-attention maps within the denoising network are localized as Gaussians with small standard deviations. We validate our performance on multiple dataset: the CelebA, CUB-200-2011, Tai-Chi-HD, DeepFashion, and Human3.6m datasets. We achieve significantly improved accuracy, sometimes even outperforming supervised ones, particularly for data that is non-aligned and less curated.</p> </details>
+          </p>  
+     </td>
+   </tr>
+<tr>
 <tr>
   <tr>
      <td width="35%" valign="middle">
