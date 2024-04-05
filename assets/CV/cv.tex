@@ -1,0 +1,309 @@
+\documentclass[11pt,letter,sans]{moderncv}
+
+\usepackage{longtable}
+\setlength{\LTleft}{0pt}
+\definecolor{tab_highlight}{HTML}{f0c967}
+
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\definecolor{color2}{rgb}{0.25,0.25,0.25}
+
+\usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
+
+% Define filled heart symbol
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+
+\usepackage{mathabx} % For \bigstar
+
+\usepackage{lastpage}
+\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
+
+\AtEndPreamble{\hypersetup{pdftitle={Gopal Sharma: CV}, allcolors=color1, colorlinks}}
+\name{Gopal}{Sharma}
+\email{gopalsharma.research@gmail.com}
+\homepage{hippogriff.github.io}
+\social[linkedin]{gopal-sharma-527aba82}
+\social[twitter]{beaky_wings}
+\social[github]{hippogriff}
+\extrainfo{\small Last updated on \today}
+
+\frenchspacing
+
+\begin{document}
+\makecvtitle
+\vspace{-1cm}
+
+\rfoot{}
+
+\section{Current Position}
+\textbf{Postdoctoral Researcher}, \emph{The University of British Columbia}, Vancouver
+    \hfill 2022 -- Present \par
+
+
+\section{Education}
+% \vspace{-2mm}
+% \begin{itemize}
+    % \item 
+    \textbf{Ph.D. in Computer Science}, \emph{University of Massachusetts, Amherst}
+        (3.86/4.00)
+    \hfill 2016 -- 2022 \par
+Thesis: \textit{\href{https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=3707&context=dissertations_2}{Representation Learning for Shape Decomposition, By Shape Decomposition }} \par
+Advisor: \href{https://people.cs.umass.edu/~smaji/}{Subhransu Maji} and \href{https://people.cs.umass.edu/~kalo/}{Evangelos Kalogerakis} \par
+  \vspace{3mm}
+    % \item 
+    \textbf{B.Tech. in Electrical Engineering}, \emph{Indian Institute of Technology, Roorkee}
+        (8.6/10.0)
+    \hfill 2012 -- 2016 \par
+  \vspace{3mm}
+% \end{itemize}
+\vspace{-3mm}
+
+\section{Work Experience}
+% \textbf{Research Assistant}, \emph{University of Massachusetts}    {\footnotesize \color{gray} (with Subhransu Maji and Evangelos Kalogerakis on computer vision and graphics)}
+%     \hfill 2016 -- 2022 \par
+\textbf{Research Intern}, \emph{Nvidia}, Toronto
+    {\footnotesize \color{gray} (with Sanja Fidler and Kangxue Yin on 3D self-supervised learning)}
+    \hfill 2021 \par
+\textbf{Research Intern}, \emph{Adobe}, San Jose
+    {\footnotesize \color{gray} (with Radomír Měch and Siddhartha Chaudhuri on neural shape reconstruction)}
+    \hfill 2019 \par
+\textbf{Research intern}, \emph{KAUST}    {\footnotesize \color{gray} (with Bernard Ghanem on object tracking)}
+    \hfill 2015 \par
+
+\section{Research Interests}
+Intersection of computer vision, computer graphics and machine learning, with elphasis on neural rendering (NeRFs and Gaussian Splatting) and Diffusion models.
+
+
+\section{Publications}
+% \vspace{-8mm}
+% \hfill
+% Google Scholar ID:
+% \href{https://scholar.google.com/citations?user=Oe3bmrQAAAAJ}{Oe3bmrQAAAAJ}
+% \vspace{2mm}
+\vspace{-8.2mm}\hspace{30mm}[\href{https://scholar.google.com/citations?user=Oe3bmrQAAAAJ}{Google Scholar}: 0.4k+ citations and an h-index of 9]\vspace{3mm}
+
+
+\setlength\fboxsep{2pt}
+% Selected publications are \hspace{-\fboxsep}\colorbox{tab_highlight}{highlighted.}
+% [\href{https://github.com/bamos/cv/blob/master/publications/all.bib}{BibTeX}]
+
+% [<a href="https://scholar.google.com/citations?user={{ scholar_id }}">Google Scholar</a>]
+% [<a href="https://github.com/bamos/cv/blob/master/publications/{{ content.file }}">BibTeX</a>]
+
+% \renewcommand*{\bibfont}{\small}
+
+% \begin{refsection}[publications/all.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+\subsection{2024}
+\begin{minipage}{\textwidth}
+  \begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+   \hfill1.\hspace*{1mm} && \textit{Unsupervised Keypoints from Pretrained Diffusion Models}  \\
+   && \mbox{\href{}{Eric Hedlin}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Shweta Mahajan}}, \mbox{Xingzhe He}, \mbox{\href{}{Hossam Isack}}, \mbox{\href{}{Abhishek Kar}}, \mbox{Helge Rhodin}, \mbox{Andrea Tagliasacchi}, and \mbox{\href{}{Kwang Moo Yi}} \\
+   && CVPR 2024 \textbf{(Spotlight)} \\
+  \end{tabular} \\[2mm]
+  \end{minipage}
+  
+  \begin{minipage}{\textwidth}
+  \begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+   \hfill2.\hspace*{1mm} && \textit{Accelerating Neural Field Training via Soft Mining}  \\
+   && \mbox{Shakiba Kheradmand}, \mbox{\href{}{Daniel Rebain}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Hossam Isack}}, \mbox{Kar Abhishek}, \mbox{Andrea Tagliasacchi}, and \mbox{\href{}{Kwang Moo Yi}} \\
+   && CVPR 2024  \\
+  \end{tabular} \\[2mm]
+  \end{minipage}
+
+\subsection{2023}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill3.\hspace*{1mm} && \textit{Volumetric Rendering with Baked Quadrature Fields}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Daniel Rebain}}, \mbox{Andrea Tagliasacchi}, and \mbox{\href{}{Kwang Moo Yi}} \\
+ && Arxiv 2023  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill4.\hspace*{1mm} && \textit{Unsupervised Semantic Correspondence Using Stable Diffusion}  \\
+ && \mbox{\href{}{Eric Hedlin}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Shweta Mahajan}}, \mbox{\href{}{Hossam Isack}}, \mbox{\href{}{Abhishek Kar}}, \mbox{Andrea Tagliasacchi}, and \mbox{\href{}{Kwang Moo Yi}} \\
+ && NeurIPS 2023  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill5.\hspace*{1mm} && \textit{PointNeRF++: A multi-scale, point-based Neural Radiance Field}  \\
+ && \mbox{Weiwei Sun}, \mbox{Eduard Trulls}, \mbox{Yang-Che Tseng}, \mbox{Sneha Sambandam}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{Andrea Tagliasacchi}, and \mbox{\href{}{Kwang Moo Yi}} \\
+ && Arxiv 2023  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\subsection{2022}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill6.\hspace*{1mm} && \textit{PriFit: Learning to Fit Primitives Improves Few Shot Point Cloud Segmentation}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Bidya Dash}}, \mbox{Matheus Gadelha}, \mbox{\href{}{Aruni RoyChowdhury}}, \mbox{Marios Loizou}, \mbox{\href{}{Evangelos Kalogerakis}}, \mbox{\href{}{Liangliang Cao}}, and \mbox{\href{}{Erik Learned-Miller}} \\
+ && Computer Graphics Forum 2022  (\textbf{Oral})\\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill7.\hspace*{1mm} && \textit{MvDeCor: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Kangxue Yin}}, \mbox{\href{}{Subhransu Maji}}, \mbox{\href{}{Evangelos Kalogerakis}}, \mbox{Or Litany}, and \mbox{\href{}{Sanja Fidler}} \\
+ && European Conference on Computer Vision 2022  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill8.\hspace*{1mm} && \textit{Attention beats concatenation for conditioning neural fields}  \\
+ && \mbox{\href{}{Daniel Rebain}}, \mbox{Mark J Matthews}, \mbox{\href{}{Kwang Moo Yi}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Dmitry Lagun}}, and \mbox{Andrea Tagliasacchi} \\
+ && Transaction of Machine Learning Research 2022  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill9.\hspace*{1mm} && \textit{Representation Learning for Shape Decomposition, By Shape Decomposition}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}} \\
+ && PhD Thesis, University of Massachusetts Amherst 2022  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\subsection{2020}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill10.\hspace*{1mm} && \textit{Label-efficient learning on point clouds using approximate convex decompositions}  \\
+ && \mbox{Matheus Gadelha}, \mbox{\href{}{Aruni RoyChowdhury}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Evangelos Kalogerakis}}, \mbox{\href{}{Liangliang Cao}}, \mbox{\href{}{Erik Learned-Miller}}, \mbox{\href{}{Rui Wang}}, and \mbox{\href{}{Subhransu Maji}} \\
+ && Computer Vision--ECCV 2020: 16th European Conference on Computer Vision 2020  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill11.\hspace*{1mm} && \textit{ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Difan Liu}}, \mbox{\href{}{Evangelos Kalogerakis}}, \mbox{\href{}{Siddhartha Chaudhuri}}, and \mbox{Radom{\'\i}r M{\v{e}}ch} \\
+ && ECCV: European Conference on Computer Vision 2020  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\subsection{2019}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill12.\hspace*{1mm} && \textit{Search-guided, lightly-supervised training of structured prediction energy networks}  \\
+ && \mbox{\href{}{Amirmohammad Rooshenas}}, \mbox{Dongxu Zhang}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, and \mbox{\href{}{Andrew McCallum}} \\
+ && Advances in Neural Information Processing Systems 2019  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill13.\hspace*{1mm} && \textit{Learning point embeddings from shape repositories for few-shot segmentation}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{\href{}{Evangelos Kalogerakis}}, and \mbox{\href{}{Subhransu Maji}} \\
+ && 2019 International Conference on 3D Vision (3DV) 2019 (\textbf{Oral}) \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\subsection{2018}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill14.\hspace*{1mm} && \textit{CSGNet: Neural shape parser for constructive solid geometry}  \\
+ && \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{Rishabh Goyal}, \mbox{\href{}{Difan Liu}}, \mbox{\href{}{Evangelos Kalogerakis}}, and \mbox{\href{}{Subhransu Maji}} \\
+ && Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition 2018  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\subsection{2016}
+
+\begin{minipage}{\textwidth}
+\begin{tabular}[t]{p{8mm}p{1mm}>{\raggedright\arraybackslash}p{6.5in}}
+ \hfill15.\hspace*{1mm} && \textit{Persistent aerial tracking system for uavs}  \\
+ && \mbox{\href{}{Matthias Mueller}}, \mbox{\textbf{\href{hippogriff.github.io}{Gopal Sharma}}}, \mbox{Neil Smith}, and \mbox{Bernard Ghanem} \\
+ && 2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2016  \\
+\end{tabular} \\[2mm]
+\end{minipage}
+\clearpage
+\section{Invited Talks}
+% Slides for my major presentations are open-sourced with a CC-BY license at
+% \href{https://github.com/bamos/presentations}{bamos/presentations}.
+
+\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
+    \hfill 1. & \emph{MvDeCoR: Multi-view Dense Correspondence Learning for Fine-grained 3D  Segmentation},
+      Google Brain
+  & 2022 \\
+    \hfill 2. & \emph{ParSeNet: A Parametric Surface Fitting Network for 3D Point Clouds},
+      \href{https://struco3d.github.io/iccv2021/}{Invited talk at 3d Structure and Compositional Learning workshop. ICCV}
+  & 2021 \\
+    \hfill 3. & \emph{Fine-grained 3D shape co-segmentation via pixel-based contrastive learning},
+      Nvidia Toronto
+  & 2021 \\
+    \hfill 4. & \emph{Reinforcement learning for game programming},
+      Game programming course at UMass Amherst
+  & 2021 \\
+    \hfill 5. & \emph{Unity Machine Learning Agents},
+      Game programming course at UMass Amherst
+  & 2020 \\
+    \hfill 6. & \emph{CSGNet: Neural Shape Parser for Constructive Solid Geometry},
+      New England Computer Vision Workshop, Harvard University
+  & 2018 \\
+\end{longtable}
+
+
+\section{Interns and Students}
+    \href{https://ehedlin.github.io/}{Eric Hedlin} PhD student at UBC
+  \hfill 2022 -- present \\
+    \href{https://www.linkedin.com/in/shakiba-kheradmand-0a61b55a/}{Shakiba Kheradmand} PhD student at UBC
+  \hfill 2022 -- present \\
+    \href{https://www.linkedin.com/in/bidyadash/}{Bidya Dash} MSc student at UMass Amherst
+  \hfill 2021 \\
+    \href{https://rishgoyell.github.io/}{Rishabh Goyal} Visiting intern at UMass Amherst
+  \hfill 2017 \\
+
+
+\section{Professional Activities}
+      3DV Program Committee
+    \hfill 2024 \\
+
+\subsection{Reviewing}
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR) \\
+IEEE International Conference on Computer Vision (ICCV) \\
+International Conference on the Constraint Programming, AI, and Operations Research (CPAIOR) \\
+International Conference on Machine Learning (ICML) \\
+Journal of Machine Learning Research (JMLR) \\
+Neural Information Processing Systems (NeurIPS) \\
+Transactions on Pattern Analysis and Machine Intelligence (TPAMI) \\
+ECCV European Conference on Computer Vision \\
+Symposium on Geometry Processing (SGP) \\
+ACM SIGGRAPH \\
+ACM Transactions on Graphics (TOG) \\
+SIGGRAPH Asia \\
+
+
+\section{Honors \& Awards}
+% \begin{itemize}
+    MCM scholarship, Indian Institute of Technology, Roorkee
+  \hfill 2012-2014
+    \\[0.5mm]
+    IMPPRS MS scholarship, International Max Planck Research Schools
+  \hfill 2016
+    \\[0.5mm]
+% \end{itemize}
+
+
+\section{Skills}
+\begin{tabular}{p{1in}p{5in}}
+    Programming & Python, MATLAB, C++
+ \\
+    Frameworks & NumPy, Pandas, PyTorch, SciPy, TensorFlow
+ \\
+    Toolbox & Linux, emacs, org, git, tmux, zsh
+ \\
+\end{tabular}
+
+
+
+
+\end{document}
