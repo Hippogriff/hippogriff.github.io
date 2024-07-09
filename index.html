@@ -159,7 +159,7 @@ I am a postdoctoral researcher at <a href="https://vision.cs.ubc.ca/">Universit
              <b>Gopal Sharma</b>, Daniel Rebain, Andrea Tagliasacchi, Kwang Moo Yi.
 
              <br />
-             Arxiv 2023, <a href="https://quadraturefields.github.io/">Webpage</a>
+             ECCV 2024, <a href="https://quadraturefields.github.io/">Webpage</a>
    <details>
                <summary>Abstract  </summary>            
                  <p class="message">We propose a novel Neural Radiance Field (NeRF) representation for non-opaque scenes that allows fast inference by utilizing textured polygons. Despite the high-quality novel view rendering that NeRF provides, a critical limitation is that it relies on volume rendering that can be computationally expensive and does not utilize the advancements in modern graphics hardware. Existing methods for this problem fall short when it comes to modelling volumetric effects as they rely purely on surface rendering. We thus propose to model the scene with polygons, which can then be used to obtain the quadrature points required to model volumetric effects, and also their opacity and colour from the texture. To obtain such polygonal mesh, we train a specialized field whose zero-crossings would correspond to the quadrature points when volume rendering, and perform marching cubes on this field. We then rasterize the polygons and utilize the fragment shaders to obtain the final colour image. Our method allows rendering on various devices and easy integration with existing graphics frameworks while keeping the benefits of volume rendering alive.</p> </details>
@@ -199,7 +199,7 @@ Helge Rhodin, Andrea Tagliasacchi, Kwang Moo Yi.
               Weiwei Sun, Eduard Trulls, Yang-Che Tseng, Sneha Sambandam, <b>Gopal Sharma</b>, Andrea Tagliasacchi, Kwang Moo Yi.
 
               <br />
-              Arxiv 2023, <a href="https://pointnerfpp.github.io/">Webpage</a>
+              ECCV 2024, <a href="https://pointnerfpp.github.io/">Webpage</a>
 		<details>
                 <summary>Abstract  </summary>            
                   <p class="message">Point clouds offer an attractive source of information to complement images in neural scene representations, especially when few images are available. Neural rendering methods based on point clouds do exist, but they do not perform well when the point cloud quality is low---e.g., sparse or incomplete, which is often the case with real-world data. We overcome these problems with a simple representation that aggregates point clouds at multiple scale levels with sparse voxel grids at different resolutions. To deal with point cloud sparsity, we average across multiple scale levels---but only among those that are valid, i.e., that have enough neighboring points in proximity to the ray of a pixel. To help model areas without points, we add a global voxel at the coarsest scale, thus unifying ``classical'' and point-based NeRF formulations.</p> </details>
